@@ -1,0 +1,99 @@
+\documentclass{beamer}
+\usepackage[english]{babel}
+\usepackage{newunicodechar} 
+\usepackage{adjustbox}
+\usepackage{mathrsfs }
+\usepackage{listings}
+\usepackage{xspace}
+\useoutertheme[footline=authortitle]{miniframes}
+\usefonttheme{structurebold}
+\usecolortheme{whale}
+\usecolortheme{lily}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{rotating}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+% Theme for beamer presentation.
+
+\begin{document}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% add the outline page before a new section	
+% you can delete it if you do not like it
+\AtBeginSection{
+  \frame{\tableofcontents[sections={\thesection}]}
+}
+\AtBeginSection[]
+{
+ {\tiny  \begin{frame}<beamer>
+     \frametitle{Outline}
+    \tableofcontents[currentsection]
+   \end{frame}}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\begin{center}
+{\large Title: }\\
+ \vspace*{1cm}
+{\small Author: }\\ 
+ \vspace*{0.3cm}
+{\small Leiden University\\
+ Institute of Psychology\\
+ Methodology \& Statistics Unit\\
+\vspace*{0.3cm}
+Date: }
+
+ \includegraphics[width=0.4\textwidth]{LogoUniversityLeiden}
+\end{center}
+\end{frame}
+
+\section{section title 1}
+\begin{frame} % a new slide
+	\begin{itemize}
+		\item 
+		\item 
+		\item 
+	\end{itemize}
+
+\end{frame}
+
+\subsection{subsection title 1} 
+\begin{frame}
+	\begin{itemize}
+		\item 
+		\item 
+		\item 
+	\end{itemize}
+\end{frame}
+
+\subsection{subsection title 2}
+\begin{frame}
+\begin{itemize}
+	\item 
+	\item 
+	\item 
+\end{itemize}
+\end{frame}
+
+\section{section title 2}
+\subsection{subsection title 1}
+\begin{frame}
+\end{frame}
+
+\subsection{subsection title 2}
+\begin{frame}
+	content...
+\end{frame}
+
+\section{section title 3}
+\begin{frame}
+	content...
+\end{frame}
+\end{document}
